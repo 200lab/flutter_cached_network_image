@@ -246,7 +246,7 @@ class CachedNetworkImageState extends State<CachedNetworkImage>
         }
         lastHolder.animationController.reverse().then((_) {
           _imageHolders.remove(lastHolder);
-          if (mounted) setState(() {});
+          // if (mounted) setState(() {});
           return null;
         });
       });
